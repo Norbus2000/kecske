@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+main, header, #bal, #jobb, article, footer {
+    border: 1px solid black;
+}
+
+main {
+    max-width: 1200px;
+    
+    display:grid;
+
+    grid-template-areas: 
+    "he he he he"
+    "ba ar ar jo"
+    "ba ar ar jo"
+    "fo fo fo fo"
+    ;
+}
+
+header {
+
+    grid-area: he;
+}
+
+#bal {
+    grid-area: ba;
+}
+
+article {
+    background-color: aquamarine;
+    grid-area: ar;
+    display: flex;  
+}
+/*
+article img {
+    justify-content: center;
+}
+*/
+#jobb {
+    grid-area: jo;
+}
+
+footer {
+    grid-area: fo;
+    background-color: aquamarine;
+
+}
+
+aside img {
+    width: 40px;
+}
